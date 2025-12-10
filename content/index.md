@@ -14,7 +14,7 @@ This site features a visit counter:
 
 <!-- Visit Counter -->
 
-<div id="visit-counter" style="display: flex; gap: 3px; flex-direction: column; align-items: center">
+<div id="visit-counter" style="display: flex; gap: 3px; flex-direction: column;">
 
 <div class="visit-count" style="font-size: 24px">Loading visit count...</div>
 
