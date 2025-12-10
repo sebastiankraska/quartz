@@ -4,7 +4,7 @@ publish: true
 tags:
   - intro
   - meta
-  - cloud resume challenge
+  - cloudresumechallenge
 date: 2025-12-10
 ---
 
