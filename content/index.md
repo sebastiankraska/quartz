@@ -10,7 +10,7 @@ date: 2025-12-10
 
 > You can't remove the weighs from the gym
 
-This site features a visitor counter:
+This site features a visit counter:
 
 <!-- Visit Counter -->
 
@@ -24,7 +24,7 @@ Go ahead. Reload the page. The counter will increase.
 
 You are right: This is not impressive. 
 
-Then you learn that the site is hosted on AWS and uses serverless technologies for the visitor counter, e.g. Lambda functions and DynamoDB. 
+Then you learn that the site is hosted on AWS and uses serverless technologies for the visit counter, e.g. Lambda functions and DynamoDB. 
 
 Still not impressed? 
 
@@ -38,16 +38,12 @@ Well, that's fine.
 
 Because after all it is not about impressing you, but rather about gaining skills. 
 
-From a productivity point of view, the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) and its [Terraform Extension](https://cloudresumechallenge.dev/docs/extensions/terraform-getting-started/) do not really make sense. They are overly complicated for what they achieve – a website with a visitor counter. 
+From a productivity point of view, the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) and its [Terraform Extension](https://cloudresumechallenge.dev/docs/extensions/terraform-getting-started/) do not really make sense. They are overly complicated for what they achieve – a website with a visit counter. 
  
 But that is the whole point: 
 
-Practice over theory. 
+Practice over theory. Learn just what you need when you need it. Making progress by building something. 
 
-Just In Time Learning. 
+So, I guess this site is the first barbell I lifted in the »Cloud gym«. 
 
-Making progress by building something. 
-
-So, I guess this site is only the first barbell I lifted in the »Cloud gym«. 
-
-PS: Feel free to check out the [source code of the backend](https://github.com/sebastiankraska/cloud-resume-challenge-backend) and the [frontend](https://github.com/sebastiankraska/cloud-resume-challenge-frontend).
+PS: Feel free to check out the [backend source code (Terraform)](https://github.com/sebastiankraska/cloud-resume-challenge-backend) and the [frontend source code (Quartz)](https://github.com/sebastiankraska/quartz) (and the [obsolete Hugo frontend](https://github.com/sebastiankraska/cloud-resume-challenge-frontend)).
