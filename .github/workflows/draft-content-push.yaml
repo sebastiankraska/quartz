@@ -2,7 +2,7 @@ name: Deploy Quartz to S3
 
 on:
   push:
-    branches: [main]
+    branches: [v4]
   workflow_dispatch:
 
 jobs:
