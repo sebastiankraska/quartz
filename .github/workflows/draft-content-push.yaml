@@ -24,12 +24,10 @@ jobs:
       
       - name: Install Dependencies
         run: |
-          cd quartz
           npm install
       
       - name: Build Quartz
         run: |
-          cd quartz
           npx quartz build
       
       - name: Configure AWS Credentials
