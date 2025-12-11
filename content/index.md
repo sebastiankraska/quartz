@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "The Cloud Resume Challenge"
 publish: true
 tags:
   - intro
@@ -8,9 +8,9 @@ tags:
 date: 2025-12-10
 ---
 
-> You can't remove the weighs from the gym
+> You can't remove the weighs from the gym.
 
-This site features a visit counter:
+This page has a visit counter:
 
 <!-- Visit Counter -->
 
@@ -22,15 +22,17 @@ This site features a visit counter:
 
 Go ahead. Reload the page. The counter will increase. 
 
-You are right: This is not impressive. 
+This is not impressive.
 
-Then you learn that the site is hosted on AWS and uses serverless technologies for the visit counter, e.g. Lambda functions and DynamoDB. 
+Then you learn that the site is hosted on AWS and uses serverless technologies: A Lambda function reads, increases and saves the counter from and to a DynamoDB table. 
 
 Still not impressed? 
 
-The site's source code lives inside Github. A push on the main branch triggers a Github Action. The Github Action uses Terraform to create or update the site on AWS, e.g. the S3 bucket, an API gateway, a Cloudfront distribution, the Lambda function, etc.... everything the site is made up of. 
+The site's source code lives inside Github. A push to the backend repo's main branch triggers a Github Action. 
 
-Github authenticates to AWS via OpenID Connect with a JSON Web Token. AWS receives this token and returns temporary credentials for an IAM role to the Github Action.  The IAM role has least-privilege permissions, e.g. the Github Action can only access the resources and actions it really needs to access.
+The Github Action uses Terraform to create or update the AWS resources that make up the site: the S3 bucket that store the original HTML files, the Cloudfront distribution (CDN) that makes the site load quicker worldwide, the API Gateway that invokes the Lambda function, ... 
+
+The Github Action authenticates to AWS via OpenID Connect. To do so, the Github Action asks the Github server to sign a JSON web token with Github's private key. Github is happy to do so. Beforehand, I set up a trust relationship in AWS: I basically told AWS that Github may request AWS permissions via JSON web token, but only one particular branch of my backend repo is allowed to do that. So AWS receives the signed token from the Github Action, validates it against Github's public key and checks: "Is that token from Github? If so, did Github sign it for sebastian's backend repo? And for the authorized branch?". Only if everything checks out, AWS returns temporary credentials to the Github Action. The Github Action uses these credentials to assume an AWS IAM role and accesses my AWS tenant. That IAM Role only has the necessary privileges – for example: the Github Action is NOT allowed to cancel my domain or launch cloud GPUs. But it may update most of my infrastructure.
 
 Oh, come on, still not impressed? 
 
@@ -42,7 +44,9 @@ From a productivity point of view, the [Cloud Resume Challenge](https://cloudres
  
 But that is the whole point: 
 
-Practice over theory. Learn just what you need when you need it. Making progress by building something. 
+- Practice over theory. 
+- Learn just what you need when you need it.
+- Making progress by building something. 
 
 So, I guess this site is the first barbell I lifted in the »Cloud gym«. 
 

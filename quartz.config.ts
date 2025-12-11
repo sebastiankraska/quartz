@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Cloud Resume Challenge Demo",
+    pageTitle: "The Mental Gym.",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
