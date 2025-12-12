@@ -1,8 +1,8 @@
 ---
 publish: false
-tags: 
-created: <% tp.date.now("YYYY-MM-DD") %>
-modified: 
+tags:
+created: 2025-12-12
+modified:
 ---
 
 Title: "[Topic] Made [One Thing] Click For Me"
