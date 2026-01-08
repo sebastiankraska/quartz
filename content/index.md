@@ -1,25 +1,14 @@
 ---
-title: The Learning Cycle
+title: Digital Jungle of a DevOps Engineer 
 publish: true
 tags:
-date: 2025-12-12
-modified: 2025-12-12T20:07:34+01:00
+date: 2026-01-08
+modified: 2026-01-08T08:05:18+01:00
 ---
 
-I will start working as DevOps Engineer soon. This is how I prepare myself:
+This is the personal website of Sebastian Kraska.
 
-1. Pick one or more topics I need to understand
-2. Create a minimal example that helps me understand how it works 
-3. Write about what I have learned 
+## Projects
 
-I am currently learning:
-
-- Observability & Application Performance Monitoring (APM)
-
----
-
-PS: I think building and talking about this site helped me getting hired. The site is based on the [Terraform Extension](https://cloudresumechallenge.dev/docs/extensions/terraform-getting-started/) of the [Cloud Resume Challenge (AWS)](https://cloudresumechallenge.dev/docs/the-challenge/aws/). That means it features a visit counter ...
-
-<div class="visit-count">Loading visit count...</div>
-
-... which would be pathetic in 2025, unless the visit counter runs on a *serverless funtion* (AWS Lambda). Feel free to take a look at the [Python source code for the Lambda function](https://github.com/sebastiankraska/cloud-resume-challenge-backend/blob/main/terraform/lambda/visit-counter.py) and the [Terraform code that created the function](https://github.com/sebastiankraska/cloud-resume-challenge-backend/blob/main/terraform/lambda.tf).
+- **Cloud ~~Resume~~ Blog Challenge**: This site was built with Terraform, is hosted on AWS and uses a serverless function. [[Cloud-Resume-Challenge| Find out more about how this site was built]]
+- **Silent, low-energy home server**: What can a Synology DS218+ do if you put too much money and time into it? [[Essay-not-really-Home-Server| Find out more about this foolisness]]
