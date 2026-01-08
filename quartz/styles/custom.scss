@@ -1,3 +1,417 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Aether Theme - Dark theme with golden accents
+// Inspired by Arch Linux / Omarchy / Hyprland aether configuration
+
+:root {
+  // Aether color palette - Dark mode
+  --aether-background: #101010;
+  --aether-foreground: #ffffff;
+  --aether-gold: #ceaa79;
+  --aether-gold-light: #dac68b;
+  --aether-gold-warm: #c9a069;
+  --aether-gold-muted: #c1ab81;
+  --aether-gold-bright: #e4c390;
+  --aether-bronze: #957959;
+  --aether-grey: #9e9e9e;
+  --aether-grey-dark: #4b382b;
+
+  // Aether color palette - Light mode
+  --aether-light-background: #f8f6f3;
+  --aether-light-foreground: #1a1a1a;
+  --aether-light-gold-deep: #6b4f0f;
+  --aether-light-gold: #805b0e;
+  --aether-light-gold-rich: #724410;
+  --aether-light-gold-warm: #7a5518;
+  --aether-light-bronze: #5a4630;
+  --aether-light-grey: #3a3a3a;
+
+  // Lighter gold for large headings (h1)
+  --aether-light-gold-h1-deep: #8b6914;
+  --aether-light-gold-h1: #b8860b;
+}
+
+// Override dark mode colors with aether palette
+:root[saved-theme="dark"] {
+  // Background colors
+  --light: var(--aether-background);
+  --lightgray: #2a2a2a;
+  --gray: #4a4a4a;
+  --darkgray: #d0d0d0;
+  --dark: var(--aether-foreground);
+
+  // Accent colors - using golden tones from aether
+  --secondary: var(--aether-gold);
+  --tertiary: var(--aether-gold-light);
+
+  // Highlight colors
+  --highlight: rgba(206, 170, 121, 0.15);
+  --textHighlight: rgba(218, 198, 139, 0.25);
+}
+
+// Sharp corners - Hyprland/aether inspired
+:root[saved-theme="dark"] {
+  // Remove all border radius for sharp, modern look
+  * {
+    border-radius: 0 !important;
+  }
+
+  // Exception for images - keep slight rounding
+  img {
+    border-radius: 3px !important;
+  }
+}
+
+// Enhanced styling for dark mode
+:root[saved-theme="dark"] {
+  // Body and background
+  body {
+    background-color: var(--aether-background);
+  }
+
+  // Links with golden gradient
+  a {
+    background: linear-gradient(135deg, var(--aether-gold-warm), var(--aether-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+
+    &:hover {
+      background: linear-gradient(135deg, var(--aether-gold-light), var(--aether-gold-bright));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    &.internal {
+      background: linear-gradient(135deg, var(--aether-gold-warm), var(--aether-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      box-shadow: inset 0 -0.15em 0 rgba(206, 170, 121, 0.25);
+    }
+  }
+
+  // Large headings with brighter gradient
+  h1 {
+    background: linear-gradient(135deg, var(--aether-gold-light), var(--aether-gold-bright));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+
+  // Smaller headings with warm golden gradient
+  h2, h3, h4, h5, h6 {
+    background: linear-gradient(135deg, var(--aether-gold), var(--aether-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+
+  // Blockquotes with golden accent
+  blockquote {
+    border-left: 3px solid var(--aether-gold);
+    background: linear-gradient(90deg, rgba(206, 170, 121, 0.08), transparent);
+    padding: 0.5rem 1rem;
+  }
+
+  // Code blocks
+  pre {
+    background-color: #1a1a1a;
+    border-color: #3a3a3a;
+  }
+
+  code {
+    background: linear-gradient(135deg, rgba(206, 170, 121, 0.12), rgba(218, 198, 139, 0.12));
+    color: var(--aether-gold-light);
+  }
+
+  // Tables
+  th {
+    background: linear-gradient(135deg, var(--aether-gold), var(--aether-gold-bright));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid var(--aether-gold);
+  }
+
+  td {
+    border-bottom-color: #2a2a2a;
+  }
+
+  // Selection
+  ::selection {
+    background: rgba(206, 170, 121, 0.3);
+    color: var(--aether-foreground);
+  }
+
+  // Horizontal rules
+  hr {
+    background: linear-gradient(90deg, transparent, var(--aether-gold), transparent);
+    height: 2px;
+  }
+
+  // Navigation progress bar
+  .navigation-progress {
+    background: linear-gradient(90deg, var(--aether-gold), var(--aether-gold-light), var(--aether-gold-bright));
+    height: 3px;
+  }
+
+  // Sidebar styling
+  .sidebar {
+    background-color: var(--aether-background);
+  }
+
+  // Search and interactive elements
+  input[type="text"],
+  input[type="search"] {
+    background-color: #1a1a1a;
+    border: 1px solid var(--aether-bronze);
+    color: var(--aether-foreground);
+
+    &:focus {
+      border: 2px solid var(--aether-gold);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(206, 170, 121, 0.15);
+    }
+  }
+
+  // Buttons and interactive elements
+  button {
+    background: linear-gradient(135deg, var(--aether-gold), var(--aether-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: none;
+    font-weight: 600;
+
+    &:hover {
+      background: linear-gradient(135deg, var(--aether-gold-light), var(--aether-gold-bright));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  // Tags
+  .tag-link {
+    background: linear-gradient(135deg, var(--aether-gold-muted), var(--aether-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    &:hover {
+      background: linear-gradient(135deg, var(--aether-gold), var(--aether-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  // Footnotes
+  .footnotes {
+    border-top: 2px solid rgba(206, 170, 121, 0.3);
+  }
+
+  // Checkboxes
+  input[type="checkbox"] {
+    border-color: var(--aether-bronze);
+
+    &:checked {
+      background: linear-gradient(135deg, var(--aether-gold), var(--aether-gold-light));
+      border-color: var(--aether-gold);
+    }
+  }
+}
+
+// Light mode with aether palette
+:root:not([saved-theme="dark"]) {
+  // Background colors
+  --light: var(--aether-light-background);
+  --lightgray: #e8e6e3;
+  --gray: #b0a090;
+  --darkgray: #4a4a4a;
+  --dark: var(--aether-light-foreground);
+
+  // Accent colors - using deep golden tones
+  --secondary: var(--aether-light-gold);
+  --tertiary: var(--aether-light-gold-warm);
+
+  // Highlight colors
+  --highlight: rgba(107, 79, 15, 0.12);
+  --textHighlight: rgba(107, 79, 15, 0.2);
+}
+
+// Sharp corners for light mode
+:root:not([saved-theme="dark"]) {
+  * {
+    border-radius: 0 !important;
+  }
+
+  img {
+    border-radius: 3px !important;
+  }
+}
+
+// Enhanced styling for light mode
+:root:not([saved-theme="dark"]) {
+  // Body and background
+  body {
+    background-color: var(--aether-light-background);
+  }
+
+  // Links with golden gradient
+  a {
+    background: linear-gradient(135deg, var(--aether-light-gold-deep), var(--aether-light-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+
+    &:hover {
+      background: linear-gradient(135deg, var(--aether-light-gold), var(--aether-light-gold-warm));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    &.internal {
+      background: linear-gradient(135deg, var(--aether-light-gold-deep), var(--aether-light-gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      box-shadow: inset 0 -0.15em 0 rgba(107, 79, 15, 0.2);
+    }
+  }
+
+  // Large headings with lighter golden gradient
+  h1 {
+    background: linear-gradient(135deg, var(--aether-light-gold-h1-deep), var(--aether-light-gold-h1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+
+  // Smaller headings with darker golden gradient
+  h2, h3, h4, h5, h6 {
+    background: linear-gradient(135deg, var(--aether-light-gold-deep), var(--aether-light-gold-rich));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+
+  // Blockquotes with golden accent
+  blockquote {
+    border-left: 3px solid var(--aether-light-gold);
+    background: linear-gradient(90deg, rgba(107, 79, 15, 0.1), transparent);
+    padding: 0.5rem 1rem;
+  }
+
+  // Code blocks
+  pre {
+    background-color: #f0ede8;
+    border: 1px solid rgba(107, 79, 15, 0.25);
+  }
+
+  code {
+    background: linear-gradient(135deg, rgba(107, 79, 15, 0.15), rgba(122, 85, 24, 0.15));
+    color: var(--aether-light-gold-deep);
+  }
+
+  // Tables
+  th {
+    background: linear-gradient(135deg, var(--aether-light-gold-deep), var(--aether-light-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid var(--aether-light-gold);
+  }
+
+  td {
+    border-bottom-color: #e8e6e3;
+  }
+
+  // Selection
+  ::selection {
+    background: rgba(107, 79, 15, 0.3);
+    color: var(--aether-light-foreground);
+  }
+
+  // Horizontal rules
+  hr {
+    background: linear-gradient(90deg, transparent, var(--aether-light-gold), transparent);
+    height: 2px;
+  }
+
+  // Navigation progress bar with gradient
+  .navigation-progress {
+    background: linear-gradient(90deg, var(--aether-light-gold-deep), var(--aether-light-gold), var(--aether-light-gold-warm));
+    height: 3px;
+  }
+
+  // Sidebar styling
+  .sidebar {
+    background-color: var(--aether-light-background);
+  }
+
+  // Search and interactive elements
+  input[type="text"],
+  input[type="search"] {
+    background-color: #ffffff;
+    border: 1px solid var(--aether-light-bronze);
+    color: var(--aether-light-foreground);
+
+    &:focus {
+      border: 2px solid var(--aether-light-gold);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(107, 79, 15, 0.12);
+    }
+  }
+
+  // Buttons with gradient text
+  button {
+    background: none;
+    color: var(--aether-light-gold-deep);
+    border: none;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--aether-light-gold);
+    }
+  }
+
+  // Tags
+  .tag-link {
+    background: linear-gradient(135deg, var(--aether-light-gold-rich), var(--aether-light-gold-warm));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    &:hover {
+      background: linear-gradient(135deg, var(--aether-light-gold), var(--aether-light-gold-warm));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  // Footnotes
+  .footnotes {
+    border-top: 2px solid rgba(107, 79, 15, 0.35);
+  }
+
+  // Checkboxes
+  input[type="checkbox"] {
+    border-color: var(--aether-light-bronze);
+
+    &:checked {
+      background: linear-gradient(135deg, var(--aether-light-gold-deep), var(--aether-light-gold));
+      border-color: var(--aether-light-gold);
+    }
+  }
+}
