@@ -527,30 +527,6 @@ We are building a second Rails app inside the first one.
 
 ---
 
-## Hamburg
-
-> "Hamburg ist nicht Berlin."
-
-Thank god.
-
-> "Wir haben auch eine Startup-Szene."
-
-We have twelve fintech companies, a WeWork, and a Moin sticker on every MacBook.
-
-> "Der Regen stört uns nicht."
-
-It has not stopped raining since 2011 and we have accepted this.
-
-> "Hamburg ist weltoffen."
-
-Hamburg is weltoffen if you earn above median and speak German.
-
-> "Das wird schon."
-
-We don't know if it will. We are simply done discussing it.
-
----
-
 ## Omarchy Linux
 
 > "It's opinionated."
