@@ -16,7 +16,7 @@ This guide covers two related but distinct things:
 1. **Mounting Obsidian vault folders into the PAI container** — so PAI skills can write AI-generated notes directly into your vault, and read your handwritten notes.
 2. **Giving Obsidian read access to PAI's own files** — so you can browse PAI's identity, memory, and knowledge files (stored inside the container volume) directly in Obsidian.
 
-For the base container setup, see [[pai-inside-container]].
+For the base container setup, see [[handwritten/quartz/content/Projects/pai-inside-container]].
 
 ---
 

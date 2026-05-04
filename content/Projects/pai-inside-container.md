@@ -131,7 +131,7 @@ docker compose up -d
 docker exec -it pai zsh
 ```
 
-The only mandatory volume is `pai-home:/root` — it persists all of PAI's config, memory, and credentials across container restarts and rebuilds. For mounting Obsidian vault folders and giving Obsidian read access to PAI's own files, see [[pai-volumes-and-obsidian]].
+The only mandatory volume is `pai-home:/root` — it persists all of PAI's config, memory, and credentials across container restarts and rebuilds. For mounting Obsidian vault folders and giving Obsidian read access to PAI's own files, see [[handwritten/quartz/content/Projects/pai-volumes-and-obsidian]].
 
 > [!danger] Never mount the Docker socket
 >
