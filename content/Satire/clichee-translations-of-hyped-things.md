@@ -128,26 +128,6 @@ _v2.0 — The Tweetable Edition — March 2026_ _Written by a human. Refined by 
 
 ---
 
-## HAMBURG-CLICHEE.MD
-
-### _Tor zur Welt, Tür bleibt zu_
-
-**Says:** "Typisch norddeutsch — wir sind etwas zurückhaltend." **Means:** Wir brauchen 8 Jahre um zu entscheiden ob wir dich mögen. Dann sagen wir es trotzdem nicht.
-
-**Says:** "Wir lieben die Alster." **Means:** Wir laufen einmal um einen See und nennen es Lebensqualität. Kostet trotzdem 18€ pro Quadratmeter.
-
-**Says:** "Hamburg hat eine tolle Startup-Szene." **Means:** Jimdo, XING und About You. Das war's. Danke für Ihren Besuch.
-
-**Says:** "Die Elbphilharmonie ist unser Wahrzeichen." **Means:** 789 Millionen Euro für ein Gebäude das aussieht wie eine Welle. 
-
-**Says:** "Moin." **Means:** Guten Morgen, guten Tag, guten Abend, hallo, tschüss, ich mag dich, ich mag dich nicht, lass mich in Ruhe. Alles in vier Buchstaben. Effizienz.
-
-**Says:** "Die HVV-App ist ganz praktisch." **Means:** Die App zeigt dir in Echtzeit wie dein Bus ohne dich abfährt.
-
-**Says:** "Wir ziehen nach Hamburg, da ist das Wasser so nah." **Means:** Du wirst die Elbe dreimal im Jahr sehen.
-
----
-
 ## PYTHON-CLICHEE.MD
 
 ### _Readable Code, Unreadable Dependency Trees_
