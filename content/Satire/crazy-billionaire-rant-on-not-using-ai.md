@@ -1,5 +1,5 @@
 ---
-title: Claude impersonating a Crazy Tech Billionaire  - impersonation from Claude Code
+title: Tech Billionaire thinks about feeling guilty when using AI
 publish: true
 tags:
 date: 2026-05-03
