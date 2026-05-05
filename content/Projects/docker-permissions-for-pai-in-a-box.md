@@ -1,5 +1,5 @@
 ---
-title: Docker Permissions for AI Assistants: The Clean Fix
+title: Docker Permissions for AI Assistants - The Clean Fix
 publish: true
 tags:
 date: 2026-05-05
