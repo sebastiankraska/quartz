@@ -4,7 +4,6 @@ publish: true
 tags:
 date: 2026-05-03
 ---
-# Claude impersonating a Crazy Tech Billionaire  - impersonation from Claude Code
 
 So I started using Claude Code as a debugging partner and immediately felt like I'd committed some kind of crime against software development.
 
@@ -51,7 +50,7 @@ We have more options. Using them isn't weakness. It's just smart.
 
 ## The Real Insecurity
 
-The guilt isn't actually about learning. It's about this weird idea that struggle = virtue.
+The guilt isn't actually about learning. It's about this weird idea that **struggle = virtue**.
 
 > I had to suffer, so you should too.
 
@@ -71,13 +70,17 @@ The question is:
 
 If yes, then you're good. The tool is irrelevant.
 
-## Stop Internalizing Other People's Constraints
+## Stop Romanticizing Other People's Constraints
 
-Your grandfather used hand tools because hand tools were the state of the art. This wasn't noble. It was just reality.
+Your grandfather used hand tools because hand tools were the state of the art. This wasn't noble. It was just reality. 
 
 You have better tools. This is objectively better. Not morally superior. Not impressive. Just better.
 
 If your senior dev could time-travel and use Claude Code when they were learning, they 100% would. They'd weep with joy at the opportunity.
+
+And if the trend continues, your grandchildren will ask you in 40 years:
+
+> How did you get anything done without /<super-future-tool XYZ/>? I mean, you only had Claude Code and the Opus model back then, right? Wow. It must be very hard to create software back then. Respect, grandpa.
 
 Don't pretend constraints were features. Constraints were constraints.
 

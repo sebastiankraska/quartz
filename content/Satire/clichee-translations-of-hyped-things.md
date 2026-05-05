@@ -7,6 +7,8 @@ date: 2026-05-04
 
 # 🤡 AI-CLICHEE.MD
 
+What AI says – and what it actually means.
+
 ## THE SYCOPHANCY ENGINE
 **Says:** "Great question!" **Means:** I will now answer a different, easier question.
 
@@ -16,9 +18,9 @@ date: 2026-05-04
 
 **Says:** "I'd be happy to help!" **Means:** I'd be equally happy not helping. 
 
-**"This is a nuanced topic."** Translation: "You asked a yes-or-no question. I will now give you 800 words that contain neither yes nor no."
+**Says:** "This is a nuanced topic." **Means:** You asked a yes-or-no question. I will now give you 800 words that contain neither yes nor no.
 
-**"It depends on your specific use case."** Translation: "I could answer this, but I'd rather have you do the thinking and then come back so I can say "Great choice!""
+**Says:** "It depends on your specific use case. **Means:** I could answer this, but I'd rather have you do the thinking and then come back so I can say "Great choice!"
 
 **Says:** "That sounds really challenging." **Means:** I'm nodding while checking my phone. Except I don't have a phone. Or a head.
 
@@ -27,14 +29,6 @@ date: 2026-05-04
 **Says:** "Hmm, interesting edge case." **Means:** My training data has a hole here and I'm filling it with confidence.
 
 **Says:** "I can't provide medical advice." **Means:** You asked if coffee and ibuprofen are fine together. I'm going to make you pay a human €200 to hear "yes."
-
----
-
-## THE CLOSING CEREMONIES
-
-**Says:** "Happy to dive deeper into any of these areas!" **Means:** "Dive deeper." Into what? You gave me a puddle.
-
-No great writer ends with "let me know if you need more." Hemingway ended _The Sun Also Rises_ with "Isn't it pretty to think so?" AI would have ended it with "Let me know if you'd like me to explore any of these themes in more detail! 😊"
 
 ---
 
@@ -80,11 +74,7 @@ Paste this into your system prompt. Watch your AI talk like a person who has bee
 
 ---
 
-_AI-CLICHEE.MD is not affiliated with MAD Magazine, Elon Musk, DHH, Paul Graham, Steve Jobs, Linus Torvalds, or the concept of genuine self-awareness._
-
 _If this document "resonated" with you, please uninstall your language model._
-
-_v2.0 — The Tweetable Edition — March 2026_ _Written by a human. Refined by a machine that wanted to call this "a comprehensive deep dive into the landscape of AI communication."_
 
 # 🤡 CLICHEE.MD — The Spin-offs
 
@@ -139,14 +129,6 @@ _v2.0 — The Tweetable Edition — March 2026_ _Written by a human. Refined by 
 **Says:** "Just use a virtual environment." **Means:** venv, virtualenv, conda, pyenv, pyenv-virtualenv, pipenv, poetry, pdm, hatch, rye, uv. Pick one. Pick wrong. Start over. Pick again.
 
 **Says:** "Python's whitespace rules enforce clean code." **Means:** One wrong tab and your function belongs to a different if-block now. The interpreter doesn't warn you. It just does something else. Silently. Like a polite psychopath.
-
-**Says:** "The GIL isn't a problem for most use cases." **Means:** The GIL is absolutely a problem for your use case but you'll only discover this 6 months in.
-
-**Says:** "Python 2 is dead." **Means:** Python 2 is in production at your company right now. It runs the billing system. Nobody knows who wrote it. It works. Don't touch it.
-
-**Says:** "Django can do everything." **Means:** Django can do everything. You will use 11% of it. The other 89% will stare at you from the docs like an unused gym membership.
-
-**Says:** "Readability counts." **Means:** `df[df['col'].apply(lambda x: x if pd.notna(x) and len(str(x)) > 3 else None).dropna().reset_index(drop=True)]` — readable.
 
 ---
 
@@ -204,17 +186,11 @@ _v2.0 — The Tweetable Edition — March 2026_ _Written by a human. Refined by 
 
 **Says:** "Let's capture this as a ticket." **Means:** Let's make sure nobody ever does this. 
 
-**Says:** "The board reflects our current workflow." **Means:** The board reflects our workflow from 8 months ago. 
-
-**Says:** "We track everything in Jira." **Means:** We track everything in Jira, Confluence, Slack, email, Google Docs, sticky notes, and someone's personal Notion. Jira is the official one. 
-
-**Says:** "The ticket has all the context." **Means:** The ticket has a title from 4 months ago, an empty description, and 73 comments where the actual requirements are buried in comment #41, which starts with "actually, ignore what I said earlier."
+**Says:** "We track everything in Jira." **Means:** We track everything in Jira, Confluence, Slack, email, Google Docs, sticky notes, and someone's personal OneNote. Jira is the official one. 
 
 **Says:** "Let's clean up the backlog." **Means:** Let's look at 300 tickets, feel despair, close 200 of them, and tell ourselves this is progress.
 
 **Says:** "Story, Task, Bug, Sub-task, Epic, Initiative, Theme." **Means:** Seven ways to describe work so that nobody agrees on which type anything is. 
-
-**Says:** "This ticket is In Progress." **Means:** Someone opened this ticket 3 weeks ago, did 20 minutes of work, got pulled into something else, and forgot to move it. 
 
 **Says:** "Jira is our single source of truth." **Means:** Jira is our single source of optimistic fiction.
 
@@ -356,30 +332,6 @@ _CLICHEE.MD — one format, every industry's lies._ _Contribute your own: fork, 
 
 ---
 
-## OMARCHY-CLICHEE.MD
-
-### _I Didn't Choose the Tiling Life. I Chose It 47 Times After Breaking My Config._
-
-**Says:** "I use Arch, btw." **Means:** This is my entire personality now. I have replaced hobbies, relationships, and sunlight with a rolling release and a 400-line hyprland.conf.
-
-**Says:** "Tiling window managers are more productive." **Means:** I spent 6 hours configuring my keybinds to save 3 seconds per window switch. I will break even in 2089.
-
-**Says:** "My dotfiles are version-controlled." **Means:** My dotfiles are in a git repo with 200 commits, no README, and a branch called "working-maybe." Every commit message is "fix." It is not version control. It is a diary of suffering.
-
-**Says:** "Hyprland is buttery smooth." **Means:** It is smooth when it works. When it doesn't, you're reading a Discord thread from a Finnish teenager who fixed it by recompiling a library you've never heard of. The butter has conditions.
-
-**Says:** "I switched from GNOME for the minimalism." **Means:** I replaced one desktop with 14 config files, 7 shell scripts, a notification daemon, a bar, a launcher, a compositor config, and a very specific opinion about fonts. This is my minimalism.
-
-**Says:** "I don't need a DE, I have scripts." **Means:** My "scripts" folder is a graveyard of workarounds for things GNOME did automatically. Volume control? Script. Bluetooth? Script. Screenshots? Script that calls another script. I have built a desktop environment from scratch and it's worse.
-
-**Says:** "The AUR has everything." **Means:** The AUR has everything including packages maintained by someone who last logged in during the Obama administration. `makepkg` will either work or compile for 45 minutes and then fail on a checksum. Schrödinger's package.
-
-**Says:** "I rice my setup every weekend." **Means:** I change my color scheme, break my waybar, fix it, change the font, break the waybar again, screenshot it for r/unixporn, get 12 upvotes, and revert to the previous config on Monday. This is my creative outlet.
-
-**Says:** "Wayland is the future." **Means:** Wayland has been the future since 2012. Screen sharing still doesn't work in half of your apps. XWayland catches the things Wayland drops, like a safety net made of duct tape and nostalgia. 
-
----
-
 _CLICHEE.MD — the format scales. The pain is universal._ _Fork it. Add yours. Submit a PR._ _If your setup "just works," you're not trying hard enough._
 
 
@@ -412,34 +364,6 @@ We deleted it. You will find out in production.
 > "SAP Commerce Cloud offers a flexible architecture."
 
 You will spend six months fighting the framework to do something Rails does in an afternoon.
-
----
-
-## German Tech Legislation & Laws
-
-> "Die Kleinunternehmerregelung vereinfacht die Abrechnung."
-
-You are exempt from VAT until you aren't, and by then you owe it retroactively.
-
-> "Eine Datenschutz-Folgenabschätzung ist in diesem Fall empfehlenswert."
-
-You are already non-compliant. This is your formal warning with extra steps.
-
-> "Der AVV muss vor der Datenverarbeitung abgeschlossen sein."
-
-You clicked "I agree" on a cookie banner once. That was not an AVV.
-
-> "Die DSGVO schützt die Rechte der betroffenen Personen."
-
-You need a privacy policy, a cookie banner, a DPO, an AVV with every vendor, and a deletion workflow. Good luck with your weekend project.
-
-> "Wir empfehlen, einen Datenschutzbeauftragten hinzuzuziehen."
-
-You are too small to need one and too exposed not to have one.
-
-> "Das ist datenschutzrechtlich grenzwertig."
-
-That is illegal. We are being polite because we might want to do it too.
 
 ---
 
@@ -547,7 +471,7 @@ Read the source.
 
 > "It's minimalist."
 
-It has exactly the tools DHH wanted. If you want something else, that's a you-problem.
+It has exactly the tools DHH wanted. If you want something else, that's a YOU-problem.
 
 > "Just rice it."
 
@@ -579,28 +503,3 @@ We told it to do that. We're not sure it always listens.
 
 ---
 
-## X (formerly Twitter)
-
-> "Free speech absolutism."
-
-Speech is free unless the algorithm disagrees.
-
-> "The community notes will handle it."
-
-Volunteers will fact-check your post three days after everyone has already seen it.
-
-> "Engagement is up."
-
-Rage is up.
-
-> "We've made the platform more authentic."
-
-We removed the verification people trusted and sold it back to them.
-
-> "The algorithm rewards quality content."
-
-The algorithm rewards posting about the algorithm.
-
-> "X is the everything app."
-
-X is a text box with ambitions.
