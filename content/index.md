@@ -34,6 +34,6 @@ If you want to use AI to improve your life, consider checking out *Daniel Miessl
 
 If you want to read something stupid – but maybe also funny – and sometimes shockingly thoughtful … 
 
-… then consider reading  [[Satire/crazy-ai-gen-tv-shows-and-movie|satirical reviews on TV shows and movies]] and [[Satire/tech-billionaire-rants|rants on Java, Zettelkasten and React]] – written in the tone celebrities. For example: I prompted AI to impersonate Elon Musk and rewrite my thoughts on the first episode of"Alien: Earth" – a TV show about a future where everything looks great and nobody has a brain. 
+… then consider reading  [[Satire/crazy-ai-gen-tv-shows-and-movie|satirical reviews on TV shows and movies]] and [[Satire/tech-billionaire-rants|rants on Java, Zettelkasten and React]] – written in the tone of celebrities. For example: I prompted AI to impersonate Elon Musk and rewrite my thoughts on the first episode of"Alien: Earth" – a TV show about a future where everything looks great and nobody has a brain. 
 
 … or check out  [[Satire/clichee-translations-of-hyped-things|Clichee.md]] – a translation of what AI says ("Great question!") and what AI actually means ("I will now answer a slightly different, easier question."). There are also chapters on what Agile Masters, Java Advocates and Ruby on Rails Fans say … and how it translates into reality.   
