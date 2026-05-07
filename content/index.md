@@ -2,7 +2,7 @@
 title: Not totally useless.
 publish: true
 tags:
-date: 2026-01-08
+date: 2026-05-07
 modified: 2026-01-08T09:13:18+01:00
 ---
 
