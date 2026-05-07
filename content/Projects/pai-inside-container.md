@@ -7,6 +7,8 @@ date: 2026-05-03
 
 # Running PAI inside a Docker Container
 
+See also [[pai-volumes-and-obsidian]]
+
 > [!danger] Work in progress
 >
 > This is an early draft. 
