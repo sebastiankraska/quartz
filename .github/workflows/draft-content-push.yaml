@@ -37,8 +37,11 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       
       - name: Deploy to S3
-        run: |
-          aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+        run:|
+          # Delete entire bucket
+          aws s3 rm s3://${{ secrets.S3_BUCKET_NAME }} --recursive
+          # Then sync new files
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }}
       
       - name: Invalidate CloudFront
         run: |
