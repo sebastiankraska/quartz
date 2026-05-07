@@ -28,6 +28,7 @@ jobs:
       
       - name: Build Quartz
         run: |
+          rm -rf public/  # Clean old build
           npx quartz build
       
       - name: Configure AWS Credentials
@@ -39,9 +40,9 @@ jobs:
       - name: Deploy to S3
         run: |
           # Delete entire bucket
-          aws s3 rm s3://${{ secrets.S3_BUCKET_NAME }} --recursive
+          # aws s3 rm s3://${{ secrets.S3_BUCKET_NAME }} --recursive
           # Then sync new files
-          aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }}
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
       
       - name: Invalidate CloudFront
         run: |
