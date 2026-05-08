@@ -6,34 +6,18 @@ date: 2026-05-07
 modified: 2026-01-08T09:13:18+01:00
 ---
 
-## Who … ?
+## About me:
 
-DevOps Engineer. 
+I am Sebastian, a DevOps Engineer. 
 
-Thinking about AI. 
+I am currently working on understanding [Daniel Miessler's PAI](https://deepwiki.com/danielmiessler/Personal_AI_Infrastructure/1-overview) – his Personal AI Infrastructure project. 
 
-Learning Ruby on Rails. 
-
-Working on reducing the time between "Wouldn't it be cool if…" and "Done!".
+My goals are:
+- Using AI to reduce the time between having an idea and realizing it. I want to reduce the time between "Wouldn't it be cool if … ?" and "Done, this is fun, what's next?"
+- Becoming smarter, not dumber by using AI. [DM](https://danielmiessler.com/blog/keep-the-robots-out-of-the-gym) and [PG](https://paulgraham.com/writes.html) both write about this.
 
 ---
 
 ## Cloud Resume Challenge
 
 If you want to learn DevOps, consider doing the *Cloud Resume Challenge* – I did. [[Projects/Cloud-Resume-Challenge|It is what runs this site]].
-
----
-
-## Daniel Miessler's Personal AI Infrastructure
-
-If you want to use AI to improve your life, consider checking out *Daniel Miessler's PAI* – a *Personal AI Infrastructure* built on top of Claude Code. I am still new to this myself, but am already sold and believe this is a big deal – my first action was to [[Projects/running-pai-in-a-rootless-podman-container|lock down Claude Code and PAI into a container because I am paranoid]].
-
----
-
-## Stupid things
-
-If you want to read something stupid – but maybe also funny – and sometimes shockingly thoughtful … 
-
-… then consider reading  [[Satire/crazy-ai-gen-tv-shows-and-movie|satirical reviews on TV shows and movies]] and [[Satire/tech-billionaire-rants|rants on Java, Zettelkasten and React]] – written in the tone of celebrities. For example: I prompted AI to impersonate Elon Musk and rewrite my thoughts on the first episode of"Alien: Earth" – a TV show about a future where everything looks great and nobody has a brain. 
-
-… or check out  [[Satire/clichee-translations-of-hyped-things|Clichee.md]] – a translation of what AI says ("Great question!") and what AI actually means ("I will now answer a slightly different, easier question."). There are also chapters on what Agile Masters, Java Advocates and Ruby on Rails Fans say … and how it translates into reality.   
